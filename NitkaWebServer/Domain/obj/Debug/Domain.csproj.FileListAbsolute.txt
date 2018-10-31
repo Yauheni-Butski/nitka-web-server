@@ -1,0 +1,5 @@
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\Domain.dll
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\Domain.pdb
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\obj\Debug\Domain.dll
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\obj\Debug\Domain.pdb
