@@ -71,3 +71,10 @@ E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Micros
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\obj\Debug\NitkaWebServer.csprojResolveAssemblyReference.cache
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\obj\Debug\NitkaWebServer.dll
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\obj\Debug\NitkaWebServer.pdb
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\App_Database\NitkaPhotoDatabase.mdf
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\App_Database\NitkaPhotoDatabase_log.ldf
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Domain.dll
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Domain.pdb
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\EntityFramework.dll
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Domain.dll.config
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\EntityFramework.xml

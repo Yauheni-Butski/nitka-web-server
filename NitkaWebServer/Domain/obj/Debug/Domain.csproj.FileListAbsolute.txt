@@ -3,3 +3,10 @@ E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\Domain.p
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\obj\Debug\Domain.dll
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\obj\Debug\Domain.pdb
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\App_Database\NitkaPhotoDatabase.mdf
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\App_Database\NitkaPhotoDatabase_log.ldf
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\Domain.dll.config
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\EntityFramework.dll
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\EntityFramework.xml
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\EntityFramework.SqlServer.xml

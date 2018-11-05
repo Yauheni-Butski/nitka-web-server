@@ -1,6 +1,6 @@
-namespace Domain.Context
+namespace Domain.Models
 {
-    using Domain.Models;
+    using System;
     using System.ComponentModel.DataAnnotations;
 
     public partial class FrequentlyAskedQuestions : BaseModel
@@ -11,5 +11,6 @@ namespace Domain.Context
 
         [Required]
         public string Answer { get; set; }
+
     }
 }

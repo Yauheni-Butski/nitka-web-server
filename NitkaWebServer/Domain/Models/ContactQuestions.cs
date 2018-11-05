@@ -1,6 +1,5 @@
-namespace Domain.Context
+namespace Domain.Models
 {
-    using Domain.Models;
     using System.ComponentModel.DataAnnotations;
 
     public partial class ContactQuestions : BaseModel

@@ -1,6 +1,6 @@
-namespace Domain.Context
+namespace Domain.Models
 {
-    using Domain.Models;
+    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
@@ -11,6 +11,8 @@ namespace Domain.Context
         {
             BookedEvents = new HashSet<BookedEvents>();
         }
+
+        public long Id { get; set; }
 
         [Required]
         [StringLength(128)]

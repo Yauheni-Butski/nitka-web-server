@@ -1,12 +1,11 @@
-namespace Domain.Context
+namespace Domain.Models
 {
-    using Domain.Models;
     using System;
     using System.ComponentModel.DataAnnotations;
 
     public partial class BookedEvents : BaseModel
     {
-        public int BookingStatusId { get; set; }
+        public long BookingStatusId { get; set; }
 
         [Required]
         [StringLength(128)]
