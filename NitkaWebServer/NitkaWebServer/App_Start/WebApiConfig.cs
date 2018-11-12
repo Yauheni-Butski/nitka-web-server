@@ -12,8 +12,8 @@ namespace NitkaWebServer
         {
             // Web API configuration and services
             //Try to send as JSON format
-            //config.Formatters.JsonFormatter.SupportedMediaTypes
-            //    .Add(new MediaTypeHeaderValue("text/html"));
+            config.Formatters.JsonFormatter.SupportedMediaTypes
+                .Add(new MediaTypeHeaderValue("text/html"));
             // Web API routes
             config.MapHttpAttributeRoutes();
 
