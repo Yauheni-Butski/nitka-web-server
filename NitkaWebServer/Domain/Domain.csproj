@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Section.cs" />
     <Compile Include="Models\AdminUsers.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\BookedEvents.cs" />

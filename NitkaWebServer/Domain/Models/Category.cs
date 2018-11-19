@@ -11,12 +11,10 @@ namespace Domain.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Category()
         {
+            //TODO. Delete this
             Images = new HashSet<Images>();
+            Section = new HashSet<Section>();
         }
-
-        public long Id { get; set; }
-
-        public long? ParentId { get; set; }
 
         [Required]
         [StringLength(256)]
@@ -29,7 +27,11 @@ namespace Domain.Models
 
         public long? CoverImageId { get; set; }
 
+        //TODO. Delete this
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Images> Images { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Section> Section { get; set; }
     }
 }
