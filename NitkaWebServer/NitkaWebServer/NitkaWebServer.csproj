@@ -182,6 +182,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Interfaces\IImageCard.cs" />
     <Compile Include="Models\SectionViewModel.cs" />
     <Compile Include="Models\CategoryViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
