@@ -78,3 +78,6 @@ E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Domain
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\EntityFramework.dll
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Domain.dll.config
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\EntityFramework.xml
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\System.Web.Cors.dll
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\System.Web.Http.Cors.dll
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\System.Web.Http.Cors.xml
