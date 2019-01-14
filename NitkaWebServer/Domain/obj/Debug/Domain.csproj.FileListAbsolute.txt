@@ -9,3 +9,4 @@ E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\EntityFr
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\EntityFramework.SqlServer.dll
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\EntityFramework.xml
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
