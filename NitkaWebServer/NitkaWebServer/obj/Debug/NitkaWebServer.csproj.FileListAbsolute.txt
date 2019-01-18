@@ -81,3 +81,15 @@ E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Entity
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\System.Web.Cors.dll
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\System.Web.Http.Cors.dll
 E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\System.Web.Http.Cors.xml
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Microsoft.IdentityModel.Logging.dll
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Microsoft.IdentityModel.Tokens.dll
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Microsoft.IdentityModel.Logging.pdb
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Microsoft.IdentityModel.Logging.xml
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Microsoft.IdentityModel.Tokens.pdb
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\Microsoft.IdentityModel.Tokens.xml
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\System.IdentityModel.Tokens.Jwt.pdb
+E:\Projects\Angular 6\nitka-server-side\NitkaWebServer\NitkaWebServer\bin\System.IdentityModel.Tokens.Jwt.xml
