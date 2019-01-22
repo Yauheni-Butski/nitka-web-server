@@ -1,7 +1,9 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 
+using System;
 using System.Configuration;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 
@@ -23,12 +25,12 @@ namespace NitkaWebServer.Helpers.Services
 
             var securityTokenDescriptor = new SecurityTokenDescriptor()
             {
-                Expires = System.DateTime.Now.AddMinutes(30),
+                Expires = DateTime.Now.AddMinutes(30),
                 Subject = claimsIdentity,
                 SigningCredentials = signingCredentials
             };
 
-            var now = System.DateTime.Now;
+            var now = DateTime.Now;
             var jwtToken = new JwtSecurityToken(
                     expires: now.AddMinutes(30),
                     notBefore: now,
@@ -41,41 +43,83 @@ namespace NitkaWebServer.Helpers.Services
             return tokenString;
         }
         //TODO. Return parameter for Claims and out for validatedToken
-        public static void ValidateToken()
+        public static bool ValidateToken(string tokenString)
         {
-            //var handler = new JwtSecurityTokenHandler();
+            try
+            {
+                var handler = new JwtSecurityTokenHandler();
+                var mySecretKey = ConfigurationManager.AppSettings["TokenSignatureKey"];
+                var param = new TokenValidationParameters
+                {
+                    ValidateAudience = false,
+                    ValidateIssuer = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ClockSkew = TimeSpan.FromMinutes(1),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(mySecretKey)),
+                };
 
-            ////create symmetrickey
-            //var buffer = new byte[64];
-            //using (var random = new RNGCryptoServiceProvider())
-            //{
-            //    random.GetBytes(buffer);
-            //}
-            //var secretString = Convert.ToBase64String(buffer);
+                SecurityToken validatedToken;
+                var claims = handler.ValidateToken(tokenString, param, out validatedToken);
+                var isAdminClaim = claims.Claims.FirstOrDefault(c => c.Type == "isAdmin");
+                if (isAdminClaim != null)
+                {
+                    bool parsedValue;
+                    Boolean.TryParse(isAdminClaim.Value, out parsedValue);
+                    return parsedValue;
+                }
 
-            ////create jwt
-            //var token = handler.CreateToken(
-            //    issuer: "issuer",
-            //    audience: "audience",
-            //    expires: DateTime.UtcNow.AddSeconds(10),
-            //    subject: new ClaimsIdentity(new[] {
-            //        new Claim(ClaimTypes.NameIdentifier, Guid.NewGuid().ToString()),
-            //        new Claim(ClaimTypes.Name, "User")
-            //    }),
-            //    signingCredentials: new SigningCredentials(new InMemorySymmetricSecurityKey(buffer), SecurityAlgorithms.HmacSha256Signature, SecurityAlgorithms.Sha512Digest));
-
-
-            //validate jwt
-            //var tokenString = handler.WriteToken(token);
-            //SecurityToken validatedToken;
-            //var param = new TokenValidationParameters
-            //{
-            //    ClockSkew = TimeSpan.FromMinutes(1),
-            //    ValidIssuer = "issuer",
-            //    ValidAudience = "audience",
-            //    IssuerSigningKey = new InMemorySymmetricSecurityKey(buffer),
-            //};
-            //var claims = handler.ValidateToken(tokenString, param, out validatedToken);
+                return false;
+            }
+            catch(SecurityTokenInvalidSignatureException e)
+            {
+                //Use some specific message
+                return false;
+            }
+            catch(ArgumentException e)
+            {
+                //Wrong format
+                //Use specific message.
+                return false;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
         }
+
+        //var handler = new JwtSecurityTokenHandler();
+
+        ////create symmetrickey
+        //var buffer = new byte[64];
+        //using (var random = new RNGCryptoServiceProvider())
+        //{
+        //    random.GetBytes(buffer);
+        //}
+        //var secretString = Convert.ToBase64String(buffer);
+
+        ////create jwt
+        //var token = handler.CreateToken(
+        //    issuer: "issuer",
+        //    audience: "audience",
+        //    expires: DateTime.UtcNow.AddSeconds(10),
+        //    subject: new ClaimsIdentity(new[] {
+        //        new Claim(ClaimTypes.NameIdentifier, Guid.NewGuid().ToString()),
+        //        new Claim(ClaimTypes.Name, "User")
+        //    }),
+        //    signingCredentials: new SigningCredentials(new InMemorySymmetricSecurityKey(buffer), SecurityAlgorithms.HmacSha256Signature, SecurityAlgorithms.Sha512Digest));
+
+
+        //validate jwt
+        //var tokenString = handler.WriteToken(token);
+        //SecurityToken validatedToken;
+        //var param = new TokenValidationParameters
+        //{
+        //    ClockSkew = TimeSpan.FromMinutes(1),
+        //    ValidIssuer = "issuer",
+        //    ValidAudience = "audience",
+        //    IssuerSigningKey = new InMemorySymmetricSecurityKey(buffer),
+        //};
+        //var claims = handler.ValidateToken(tokenString, param, out validatedToken);
     }
 }
