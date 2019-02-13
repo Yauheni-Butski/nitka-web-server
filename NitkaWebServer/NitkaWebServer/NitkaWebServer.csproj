@@ -203,6 +203,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Services\TokenService.cs" />
+    <Compile Include="Models\CategoryCard.cs" />
     <Compile Include="Models\Interfaces\IImageCard.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\LoginResultViewModel.cs" />

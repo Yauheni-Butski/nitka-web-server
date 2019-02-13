@@ -1,9 +1,4 @@
 ﻿using NitkaWebServer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace NitkaWebServer.Controllers
@@ -18,14 +13,26 @@ namespace NitkaWebServer.Controllers
             switch (id)
             {
                 //TODO. Do we need return special nav links for special category?
+                case 7:
+                    //TODO. Get section parent category id
+                    int sectionCategoryId = 1;
+                    sectionsResponceData = new SectionViewModel
+                    {
+                        navLinks = new NavLinkViewModel[] {
+                            new NavLinkViewModel(title: "Главная", relativeUrl: "/", order: 1),
+                            new NavLinkViewModel(title: "Услуги", relativeUrl: "./services", order: 2),
+                            new NavLinkViewModel(title: "Серии", relativeUrl: $"/category/{sectionCategoryId}", order: 3),
+                            new NavLinkViewModel(title: "Полезные советы", relativeUrl: "./advices", order: 4)
+                        }
+                    };
+                    break;
                 default:
                     sectionsResponceData = new SectionViewModel
                     {
                         navLinks = new NavLinkViewModel[] {
-                            new NavLinkViewModel() { title = "Главная", routeName = "", order = 1 },
-                            new NavLinkViewModel() { title = "Услуги", routeName = "services", order = 2 },
-                            new NavLinkViewModel() { title = "Серии", routeName = "series", order = 3 },
-                            new NavLinkViewModel() { title = "Полезные советы", routeName = "advices", order = 4 }
+                            new NavLinkViewModel(title: "Главная", relativeUrl: "/", order: 1),
+                            new NavLinkViewModel(title: "Услуги", relativeUrl: "./services", order: 2),
+                            new NavLinkViewModel(title: "Полезные советы", relativeUrl: "./advices", order: 4)
                         }
                     };
                     break;
