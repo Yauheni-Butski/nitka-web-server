@@ -10,17 +10,17 @@ namespace NitkaWebServer.Controllers
 {
     public class SectionController : ApiController
     {
-        //TODO. VOID FOR TEMP
         // GET api/section
         [Route("api/section/{id:int}")]
         public SectionViewModel GetSection(int id)
         {
-            //2. If not subCategories, return sections
             var sectionsResponceData = new SectionViewModel { };
             switch (id)
             {
-                case 7:
-                    sectionsResponceData = new SectionViewModel {
+                //TODO. Do we need return special nav links for special category?
+                default:
+                    sectionsResponceData = new SectionViewModel
+                    {
                         navLinks = new NavLinkViewModel[] {
                             new NavLinkViewModel() { title = "Главная", routeName = "", order = 1 },
                             new NavLinkViewModel() { title = "Услуги", routeName = "services", order = 2 },
@@ -29,17 +29,7 @@ namespace NitkaWebServer.Controllers
                         }
                     };
                     break;
-                //case 8:
-                //    sectionsResponceData = new SectionViewModel[] {
-                //        new SectionViewModel() {id = 4, description = "TEST description", name = "Crazies", order = 1, coverImagePath = Url.Content("~/Assets/Images/photo53-600x400.jpg")},
-                //        new SectionViewModel() {id = 5, description = "TEST description", name = "Mens", order = 1, coverImagePath = Url.Content("~/Assets/Images/photo61-600x400.jpg")},
-                //        new SectionViewModel() {id = 6, description = "TEST description", name = "Pidors", order = 1, coverImagePath = Url.Content("~/Assets/Images/photo63-600x398.jpg")},
-                //    };
-                //    break;
-                default:
-                    break;
             }
-
             return sectionsResponceData;
         }
     }
