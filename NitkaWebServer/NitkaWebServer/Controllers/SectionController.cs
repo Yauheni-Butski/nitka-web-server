@@ -37,6 +37,32 @@ namespace NitkaWebServer.Controllers
                     };
                     break;
             }
+
+            //temp, add inner images for all section
+            sectionsResponceData.imagePlates = new ImagePlate[]
+            {
+                new ImagePlate(id: 1, thumbPath: Url.Content("~/Assets/Images/photo37-600x400.jpg"), imagePath: Url.Content("~/Assets/Images/photo37-600x400.jpg")),
+                new ImagePlate(id: 2, thumbPath: Url.Content("~/Assets/Images/photo48-644x900.jpg"), imagePath: Url.Content("~/Assets/Images/photo48-644x900.jpg")),
+                new ImagePlate(id: 3, thumbPath: Url.Content("~/Assets/Images/photo50-599x900.jpg"), imagePath: Url.Content("~/Assets/Images/photo50-599x900.jpg")),
+                new ImagePlate(id: 4, thumbPath: Url.Content("~/Assets/Images/photo53-600x400.jpg"), imagePath: Url.Content("~/Assets/Images/photo53-600x400.jpg")),
+                new ImagePlate(id: 5, thumbPath: Url.Content("~/Assets/Images/photo61-600x400.jpg"), imagePath: Url.Content("~/Assets/Images/photo61-600x400.jpg")),
+                new ImagePlate(id: 6, thumbPath: Url.Content("~/Assets/Images/photo63-600x398.jpg"), imagePath: Url.Content("~/Assets/Images/photo63-600x398.jpg")),
+                new ImagePlate(id: 7, thumbPath: Url.Content("~/Assets/Images/photo67-600x377.jpg"), imagePath: Url.Content("~/Assets/Images/photo67-600x377.jpg")),
+                new ImagePlate(id: 8, thumbPath: Url.Content("~/Assets/Images/photo69-600x375.jpg"), imagePath: Url.Content("~/Assets/Images/photo69-600x375.jpg")),
+                new ImagePlate(id: 9, thumbPath: Url.Content("~/Assets/Images/photo37-600x400.jpg"), imagePath: Url.Content("~/Assets/Images/photo37-600x400.jpg")),
+                new ImagePlate(id: 10, thumbPath: Url.Content("~/Assets/Images/photo48-644x900.jpg"), imagePath: Url.Content("~/Assets/Images/photo48-644x900.jpg")),
+                new ImagePlate(id: 11, thumbPath: Url.Content("~/Assets/Images/photo37-600x400.jpg"), imagePath: Url.Content("~/Assets/Images/photo37-600x400.jpg")),
+                new ImagePlate(id: 12, thumbPath: Url.Content("~/Assets/Images/photo48-644x900.jpg"), imagePath: Url.Content("~/Assets/Images/photo48-644x900.jpg")),
+                new ImagePlate(id: 13, thumbPath: Url.Content("~/Assets/Images/photo50-599x900.jpg"), imagePath: Url.Content("~/Assets/Images/photo50-599x900.jpg")),
+                new ImagePlate(id: 14, thumbPath: Url.Content("~/Assets/Images/photo53-600x400.jpg"), imagePath: Url.Content("~/Assets/Images/photo53-600x400.jpg")),
+                new ImagePlate(id: 15, thumbPath: Url.Content("~/Assets/Images/photo61-600x400.jpg"), imagePath: Url.Content("~/Assets/Images/photo61-600x400.jpg")),
+                new ImagePlate(id: 16, thumbPath: Url.Content("~/Assets/Images/photo63-600x398.jpg"), imagePath: Url.Content("~/Assets/Images/photo63-600x398.jpg")),
+                new ImagePlate(id: 17, thumbPath: Url.Content("~/Assets/Images/photo67-600x377.jpg"), imagePath: Url.Content("~/Assets/Images/photo67-600x377.jpg")),
+                new ImagePlate(id: 18, thumbPath: Url.Content("~/Assets/Images/photo69-600x375.jpg"), imagePath: Url.Content("~/Assets/Images/photo69-600x375.jpg")),
+                new ImagePlate(id: 19, thumbPath: Url.Content("~/Assets/Images/photo37-600x400.jpg"), imagePath: Url.Content("~/Assets/Images/photo37-600x400.jpg")),
+                new ImagePlate(id: 20, thumbPath: Url.Content("~/Assets/Images/photo48-644x900.jpg"), imagePath: Url.Content("~/Assets/Images/photo48-644x900.jpg")),
+                new ImagePlate(id: 21, thumbPath: Url.Content("~/Assets/Images/photo37-600x400.jpg"), imagePath: Url.Content("~/Assets/Images/photo37-600x400.jpg")),
+            };
             return sectionsResponceData;
         }
     }
