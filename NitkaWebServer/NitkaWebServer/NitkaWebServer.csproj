@@ -195,6 +195,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -204,6 +205,7 @@
     </Compile>
     <Compile Include="Helpers\Services\TokenService.cs" />
     <Compile Include="Models\CategoryCard.cs" />
+    <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Models\ImagePlate.cs" />
     <Compile Include="Models\Interfaces\IImageCard.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
@@ -211,6 +213,7 @@
     <Compile Include="Models\NavLinkViewModel.cs" />
     <Compile Include="Models\SectionViewModel.cs" />
     <Compile Include="Models\CategoryViewModel.cs" />
+    <Compile Include="Models\SubmitResultViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
