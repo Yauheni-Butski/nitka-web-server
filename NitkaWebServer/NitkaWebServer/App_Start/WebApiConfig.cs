@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
+﻿using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
@@ -14,8 +11,6 @@ namespace NitkaWebServer
             //TODO. Replace for real prod. origin
             var corsAttr = new EnableCorsAttribute("http://localhost:4200", "*", "*");
             config.EnableCors(corsAttr);
-            // Web API configuration and services
-            //Try to send as JSON format
             config.Formatters.JsonFormatter.SupportedMediaTypes
                 .Add(new MediaTypeHeaderValue("text/html"));
             // Web API routes

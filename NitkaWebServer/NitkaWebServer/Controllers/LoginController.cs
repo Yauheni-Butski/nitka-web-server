@@ -1,5 +1,4 @@
-﻿using Domain.Services;
-using NitkaWebServer.Helpers.Services;
+﻿using NitkaWebServer.Helpers.Services;
 using NitkaWebServer.Models;
 
 using System.Web.Http;
@@ -19,8 +18,7 @@ namespace NitkaWebServer.Controllers
             }
             else
             {
-                //throw new HttpResponseException(System.Net.HttpStatusCode.Unauthorized);
-                //только если в клиенте будем обрабатывать .error статус
+                throw new HttpResponseException(System.Net.HttpStatusCode.Unauthorized);
             }
 
             LoginResultViewModel responce = new LoginResultViewModel() { success = false };
@@ -30,7 +28,7 @@ namespace NitkaWebServer.Controllers
                 responce.userToken = adminUserToken;
             }
 
-            return responce; //return false
+            return responce;
         }
     }
 }

@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NitkaWebServer", "NitkaWebServer\NitkaWebServer.csproj", "{70708221-5EC4-4C0E-80F3-0C014FC0AB1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{76DE366B-867A-4895-AB30-5B799424DB2D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{70708221-5EC4-4C0E-80F3-0C014FC0AB1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70708221-5EC4-4C0E-80F3-0C014FC0AB1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70708221-5EC4-4C0E-80F3-0C014FC0AB1F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76DE366B-867A-4895-AB30-5B799424DB2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76DE366B-867A-4895-AB30-5B799424DB2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76DE366B-867A-4895-AB30-5B799424DB2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76DE366B-867A-4895-AB30-5B799424DB2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

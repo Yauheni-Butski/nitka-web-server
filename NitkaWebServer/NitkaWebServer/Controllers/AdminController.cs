@@ -22,15 +22,11 @@ namespace NitkaWebServer.Controllers
                 }
                 else
                 {
-                    //TODO. Return 401
-                    //return "NOT AUTHORIZED!!!!";
                     throw new HttpResponseException(System.Net.HttpStatusCode.Unauthorized);
                 }
             }
             else
             {
-                //TODO. Return 401
-                //return null;
                 throw new HttpResponseException(System.Net.HttpStatusCode.Unauthorized);
             }
         }
