@@ -13,7 +13,7 @@ namespace NitkaWebServer.Controllers
         {
             var categoryNavLinks = new NavLinkViewModel[] {
                             new NavLinkViewModel(title: "Главная", relativeUrl: "/", order: 1),
-                            new NavLinkViewModel(title: "Услуги", relativeUrl: "./services", order: 2)
+                            new NavLinkViewModel(title: "Услуги", relativeUrl: "./prices", order: 2)
             };
 
             var allCategoryCards = new CategoryCard[] {

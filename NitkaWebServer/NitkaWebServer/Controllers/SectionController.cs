@@ -18,7 +18,7 @@ namespace NitkaWebServer.Controllers
                     {
                         navLinks = new NavLinkViewModel[] {
                             new NavLinkViewModel(title: "Главная", relativeUrl: "/", order: 1),
-                            new NavLinkViewModel(title: "Услуги", relativeUrl: "./services", order: 2),
+                            new NavLinkViewModel(title: "Услуги", relativeUrl: "./prices", order: 2),
                             new NavLinkViewModel(title: "Серии", relativeUrl: $"/category/{sectionCategoryId}", order: 3)
                         }
                     };
@@ -28,7 +28,7 @@ namespace NitkaWebServer.Controllers
                     {
                         navLinks = new NavLinkViewModel[] {
                             new NavLinkViewModel(title: "Главная", relativeUrl: "/", order: 1),
-                            new NavLinkViewModel(title: "Услуги", relativeUrl: "./services", order: 2)
+                            new NavLinkViewModel(title: "Услуги", relativeUrl: "./prices", order: 2)
                         }
                     };
                     break;
